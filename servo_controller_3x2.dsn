@@ -602,7 +602,16 @@
         (clearance 254.1)
       )
     )
-    (class POWER VDD VEE
+    (class LOWPOWER VEE
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 406.4)
+        (clearance 101.7)
+      )
+    )
+    (class POWER VDD
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -672,8 +681,15 @@
     (wire (path B.Cu 1219.2  147320 -94081.6  146304 -93065.6)(net GND)(type protect))
     (wire (path B.Cu 1219.2  147320 -95250  147320 -94081.6)(net GND)(type protect))
     (wire (path B.Cu 1219.2  144780 -94335.6  146050 -93065.6  150216 -88900)(net GND)(type protect))
+    (wire (path B.Cu 406.4  114550 -76480  114550 -75830)(net GND)(type protect))
+    (wire (path B.Cu 406.4  120400 -76480  120400 -75830  120400 -75180  120400 -74530
+            120400 -73880)(net GND)(type protect))
+    (wire (path B.Cu 406.4  118999 -88265  118999 -85090)(net GND)(type protect))
     (wire (path B.Cu 812.8  90805 -106680  90805 -106045  93345 -103505  93345 -99695)(net VEE)(type protect))
     (wire (path B.Cu 812.8  91440 -97790  91440 -94365)(net VEE)(type protect))
     (wire (path B.Cu 812.8  93345 -99695  91440 -97790)(net VEE)(type protect))
+    (wire (path B.Cu 406.4  115951 -88265  115951 -85090)(net VEE)(type protect))
+    (wire (path B.Cu 406.4  109626 -99441  112395 -99441)(net VEE)(type protect))
+    (wire (path B.Cu 406.4  107950 -99441  109626 -99441)(net VEE)(type protect))
   )
 )

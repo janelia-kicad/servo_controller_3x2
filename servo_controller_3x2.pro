@@ -1,4 +1,4 @@
-update=Tue 27 Nov 2018 03:04:52 PM EST
+update=Tue 27 Nov 2018 04:15:26 PM EST
 version=1
 last_client=kicad
 [cvpcb]
@@ -92,6 +92,17 @@ dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/3]
+Name=LOWPOWER
+Clearance=0.1016
+TrackWidth=0.4064
+ViaDiameter=0.889
+ViaDrill=0.635
+uViaDiameter=0.508
+uViaDrill=0.127
+dPairWidth=0.254
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=POWER
 Clearance=0.254
 TrackWidth=0.8128
@@ -102,7 +113,7 @@ uViaDrill=0.127
 dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
-[pcbnew/Netclasses/4]
+[pcbnew/Netclasses/5]
 Name=SIGNAL
 Clearance=0.1016
 TrackWidth=0.4064
@@ -113,7 +124,7 @@ uViaDrill=0.127
 dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
-[pcbnew/Netclasses/5]
+[pcbnew/Netclasses/6]
 Name=SUPERPOWER
 Clearance=0.254
 TrackWidth=1.2192
