@@ -1,4 +1,8 @@
 * Supplemental Bill of Materials
 #+RESULTS: supplemental-parts
-| Item | Quantity | PartNumber | Vendor | Description |
-|------+----------+------------+--------+-------------|
+| Item | Quantity | PartNumber   | Vendor  | Description                       |
+|------+----------+--------------+---------+-----------------------------------|
+|    1 |        1 | 1939-1410-ND | digikey | 40W 5V 8A DESKTOP                 |
+|    2 |        1 | 1939-1027-ND | digikey | CORD 18AWG 1-15P - 320-C7 6FT BLK |
+|    3 |        4 | 1738-1255-ND | digikey | 9G METAL GEAR MICRO SERVO         |
+|      |          |              |         |                                   |

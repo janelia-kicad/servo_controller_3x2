@@ -14,244 +14,978 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L servo_controller_3x2:PCA9685 U?
+L servo_controller_3x2:PCA9685 U1
 U 1 1 5BFC6ECB
-P 4600 3250
-F 0 "U?" H 4600 4247 60  0000 C CNN
-F 1 "PCA9685" H 4600 4141 60  0000 C CNN
-F 2 "servo_controller_3x2:TSSOP28" H 4500 4100 60  0001 C CNN
-F 3 "" H 4600 3250 60  0001 C CNN
-F 4 "digikey" H 4700 4300 60  0001 C CNN "Vendor"
-F 5 "568-5931-1-ND" H 4800 4400 60  0001 C CNN "PartNumber"
-F 6 "LED Driver IC 16 Output Linear PWM Dimming 25mA 28-TSSOP" H 4900 4500 60  0001 C CNN "Description"
-	1    4600 3250
+P 5750 3600
+F 0 "U1" H 5750 4597 60  0000 C CNN
+F 1 "PCA9685" H 5750 4491 60  0000 C CNN
+F 2 "servo_controller_3x2:TSSOP28" H 5650 4450 60  0001 C CNN
+F 3 "" H 5750 3600 60  0001 C CNN
+F 4 "digikey" H 5850 4650 60  0001 C CNN "Vendor"
+F 5 "568-5931-1-ND" H 5950 4750 60  0001 C CNN "PartNumber"
+F 6 "LED Driver IC 16 Output Linear PWM Dimming 25mA 28-TSSOP" H 6050 4850 60  0001 C CNN "Description"
+	1    5750 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VEE #PWR?
 U 1 1 5BFC8C74
-P 3950 2450
+P 5100 2800
 AR Path="/5BFC8C74" Ref="#PWR?"  Part="1" 
-AR Path="/5BFC35F6/5BFC8C74" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H -300 1600 50  0001 C CNN
-F 1 "VEE" H 3950 2600 50  0000 C CNN
-F 2 "" H -300 1750 50  0001 C CNN
-F 3 "" H -300 1750 50  0001 C CNN
-	1    3950 2450
+AR Path="/5BFC35F6/5BFC8C74" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 850 1950 50  0001 C CNN
+F 1 "VEE" H 5100 2950 50  0000 C CNN
+F 2 "" H 850 2100 50  0001 C CNN
+F 3 "" H 850 2100 50  0001 C CNN
+	1    5100 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2900 2700 0    60   BiDi ~ 0
+Text HLabel 4050 3050 0    60   BiDi ~ 0
 SDA
 Wire Wire Line
-	2900 2700 3000 2700
-Text Label 3000 2700 0    60   ~ 0
+	4050 3050 4150 3050
+Text Label 4150 3050 0    60   ~ 0
 SDA
-Text HLabel 2900 2800 0    60   Input ~ 0
+Text HLabel 4050 3150 0    60   Input ~ 0
 SCL
 Wire Wire Line
-	2900 2800 3000 2800
-Text Label 3000 2800 0    60   ~ 0
+	4050 3150 4150 3150
+Text Label 4150 3150 0    60   ~ 0
 SCL
 Wire Wire Line
-	4000 2700 3950 2700
+	5150 3050 5100 3050
 Wire Wire Line
-	4000 2800 3950 2800
-Text Label 3950 2700 2    60   ~ 0
+	5150 3150 5100 3150
+Text Label 5100 3050 2    60   ~ 0
 SDA
-Text Label 3950 2800 2    60   ~ 0
+Text Label 5100 3150 2    60   ~ 0
 SCL
 Wire Wire Line
-	3950 2450 3950 2500
+	5100 2800 5100 2850
 Wire Wire Line
-	3950 2500 4000 2500
+	5100 2850 5150 2850
 $Comp
 L power:GND #PWR?
 U 1 1 5BFCC6FF
-P 3950 4050
+P 5100 4400
 AR Path="/5BFCC6FF" Ref="#PWR?"  Part="1" 
-AR Path="/5BFC35F6/5BFCC6FF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 2450 50  0001 C CNN
-F 1 "GND" H 3955 3877 50  0000 C CNN
-F 2 "" H 2750 2700 50  0001 C CNN
-F 3 "" H 2750 2700 50  0001 C CNN
-	1    3950 4050
+AR Path="/5BFC35F6/5BFCC6FF" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 3900 2800 50  0001 C CNN
+F 1 "GND" H 5105 4227 50  0000 C CNN
+F 2 "" H 3900 3050 50  0001 C CNN
+F 3 "" H 3900 3050 50  0001 C CNN
+	1    5100 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 4000 3950 4000
+	5150 4350 5100 4350
 Wire Wire Line
-	3950 4000 3950 4050
+	5100 4350 5100 4400
 $Comp
-L servo_controller_3x2:4.7k R?
+L servo_controller_3x2:4.7k R1
 U 1 1 5BFCCE0A
-P 3000 1750
-F 0 "R?" H 3050 1750 40  0000 L CNN
-F 1 "4.7k" V 3000 1700 40  0000 L CNN
-F 2 "servo_controller_3x2:SM1210" V 2930 1750 30  0001 C CNN
-F 3 "" H 3000 1750 30  0000 C CNN
-F 4 "digikey" V 3180 1850 60  0001 C CNN "Vendor"
-F 5 "YAG5470CT-ND" V 3280 1950 60  0001 C CNN "PartNumber"
-F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 3380 2050 60  0001 C CNN "Description"
-	1    3000 1750
+P 4150 2100
+F 0 "R1" H 4200 2100 40  0000 L CNN
+F 1 "4.7k" V 4150 2050 40  0000 L CNN
+F 2 "servo_controller_3x2:SM1210" V 4080 2100 30  0001 C CNN
+F 3 "" H 4150 2100 30  0000 C CNN
+F 4 "digikey" V 4330 2200 60  0001 C CNN "Vendor"
+F 5 "YAG5470CT-ND" V 4430 2300 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 4530 2400 60  0001 C CNN "Description"
+	1    4150 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L servo_controller_3x2:4.7k R?
+L servo_controller_3x2:4.7k R2
 U 1 1 5BFCD555
-P 3500 1750
-F 0 "R?" H 3550 1750 40  0000 L CNN
-F 1 "4.7k" V 3500 1700 40  0000 L CNN
-F 2 "servo_controller_3x2:SM1210" V 3430 1750 30  0001 C CNN
-F 3 "" H 3500 1750 30  0000 C CNN
-F 4 "digikey" V 3680 1850 60  0001 C CNN "Vendor"
-F 5 "YAG5470CT-ND" V 3780 1950 60  0001 C CNN "PartNumber"
-F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 3880 2050 60  0001 C CNN "Description"
-	1    3500 1750
+P 4650 2100
+F 0 "R2" H 4700 2100 40  0000 L CNN
+F 1 "4.7k" V 4650 2050 40  0000 L CNN
+F 2 "servo_controller_3x2:SM1210" V 4580 2100 30  0001 C CNN
+F 3 "" H 4650 2100 30  0000 C CNN
+F 4 "digikey" V 4830 2200 60  0001 C CNN "Vendor"
+F 5 "YAG5470CT-ND" V 4930 2300 60  0001 C CNN "PartNumber"
+F 6 "RES SMD 4.7K OHM 1% 1/2W 1210" V 5030 2400 60  0001 C CNN "Description"
+	1    4650 2100
 	1    0    0    -1  
 $EndComp
-Text Label 3050 2050 0    60   ~ 0
+Text Label 4200 2400 0    60   ~ 0
 SDA
-Text Label 3550 2050 0    60   ~ 0
+Text Label 4700 2400 0    60   ~ 0
 SCL
 $Comp
 L power:VEE #PWR?
 U 1 1 5BFCE084
-P 3000 1450
+P 4150 1800
 AR Path="/5BFCE084" Ref="#PWR?"  Part="1" 
-AR Path="/5BFC35F6/5BFCE084" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H -1250 600 50  0001 C CNN
-F 1 "VEE" H 3000 1600 50  0000 C CNN
-F 2 "" H -1250 750 50  0001 C CNN
-F 3 "" H -1250 750 50  0001 C CNN
-	1    3000 1450
+AR Path="/5BFC35F6/5BFCE084" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H -100 950 50  0001 C CNN
+F 1 "VEE" H 4150 1950 50  0000 C CNN
+F 2 "" H -100 1100 50  0001 C CNN
+F 3 "" H -100 1100 50  0001 C CNN
+	1    4150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VEE #PWR?
 U 1 1 5BFCE580
-P 3500 1450
+P 4650 1800
 AR Path="/5BFCE580" Ref="#PWR?"  Part="1" 
-AR Path="/5BFC35F6/5BFCE580" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H -750 600 50  0001 C CNN
-F 1 "VEE" H 3500 1600 50  0000 C CNN
-F 2 "" H -750 750 50  0001 C CNN
-F 3 "" H -750 750 50  0001 C CNN
-	1    3500 1450
+AR Path="/5BFC35F6/5BFCE580" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 400 950 50  0001 C CNN
+F 1 "VEE" H 4650 1950 50  0000 C CNN
+F 2 "" H 400 1100 50  0001 C CNN
+F 3 "" H 400 1100 50  0001 C CNN
+	1    4650 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1450 3000 1500
+	4150 1800 4150 1850
 Wire Wire Line
-	3500 1450 3500 1500
+	4650 1800 4650 1850
 Wire Wire Line
-	3000 2000 3000 2050
+	4150 2350 4150 2400
 Wire Wire Line
-	3000 2050 3050 2050
+	4150 2400 4200 2400
 Wire Wire Line
-	3500 2000 3500 2050
+	4650 2350 4650 2400
 Wire Wire Line
-	3500 2050 3550 2050
+	4650 2400 4700 2400
 Wire Wire Line
-	4000 3900 3950 3900
+	5150 4250 5100 4250
 Wire Wire Line
-	3950 3900 3950 4000
-Connection ~ 3950 4000
-Text HLabel 3950 3000 0    60   Input ~ 0
+	5100 4250 5100 4350
+Connection ~ 5100 4350
+Text HLabel 5100 3350 0    60   Input ~ 0
 ~ENABLE
 Wire Wire Line
-	3950 3000 4000 3000
+	5100 3350 5150 3350
 Wire Wire Line
-	4000 3200 3950 3200
+	5150 3550 5100 3550
 Wire Wire Line
-	3950 3200 3950 3300
-Connection ~ 3950 3900
+	5100 3550 5100 3650
+Connection ~ 5100 4250
 Wire Wire Line
-	4000 3300 3950 3300
-Connection ~ 3950 3300
+	5150 3650 5100 3650
+Connection ~ 5100 3650
 Wire Wire Line
-	3950 3300 3950 3400
+	5100 3650 5100 3750
 Wire Wire Line
-	4000 3400 3950 3400
-Connection ~ 3950 3400
+	5150 3750 5100 3750
+Connection ~ 5100 3750
 Wire Wire Line
-	3950 3400 3950 3500
+	5100 3750 5100 3850
 Wire Wire Line
-	4000 3500 3950 3500
-Connection ~ 3950 3500
+	5150 3850 5100 3850
+Connection ~ 5100 3850
 Wire Wire Line
-	3950 3500 3950 3600
+	5100 3850 5100 3950
 Wire Wire Line
-	4000 3600 3950 3600
-Connection ~ 3950 3600
+	5150 3950 5100 3950
+Connection ~ 5100 3950
 Wire Wire Line
-	3950 3600 3950 3700
+	5100 3950 5100 4050
 Wire Wire Line
-	4000 3700 3950 3700
-Connection ~ 3950 3700
+	5150 4050 5100 4050
+Connection ~ 5100 4050
 Wire Wire Line
-	3950 3700 3950 3900
+	5100 4050 5100 4250
 Wire Wire Line
-	5200 2500 5250 2500
+	6350 2850 6400 2850
 Wire Wire Line
-	5200 2600 5250 2600
+	6350 2950 6400 2950
 Wire Wire Line
-	5200 2700 5250 2700
+	6350 3050 6400 3050
 Wire Wire Line
-	5200 2800 5250 2800
+	6350 3150 6400 3150
 Wire Wire Line
-	5200 2900 5250 2900
+	6350 3250 6400 3250
 Wire Wire Line
-	5200 3000 5250 3000
+	6350 3350 6400 3350
 Wire Wire Line
-	5200 3100 5250 3100
+	6350 3450 6400 3450
 Wire Wire Line
-	5200 3200 5250 3200
+	6350 3550 6400 3550
 Wire Wire Line
-	5200 3300 5250 3300
+	6350 3650 6400 3650
 Wire Wire Line
-	5200 3400 5250 3400
+	6350 3750 6400 3750
 Wire Wire Line
-	5200 3500 5250 3500
+	6350 3850 6400 3850
 Wire Wire Line
-	5200 3600 5250 3600
+	6350 3950 6400 3950
 Wire Wire Line
-	5200 3700 5250 3700
+	6350 4050 6400 4050
 Wire Wire Line
-	5200 3800 5250 3800
+	6350 4150 6400 4150
 Wire Wire Line
-	5200 3900 5250 3900
+	6350 4250 6400 4250
 Wire Wire Line
-	5200 4000 5250 4000
-Text Label 5250 2500 0    60   ~ 0
+	6350 4350 6400 4350
+Text Label 6400 2850 0    60   ~ 0
 PWM_0
-Text Label 5250 2600 0    60   ~ 0
+Text Label 6400 2950 0    60   ~ 0
 PWM_1
-Text Label 5250 2700 0    60   ~ 0
+Text Label 6400 3050 0    60   ~ 0
 PWM_2
-Text Label 5250 2800 0    60   ~ 0
+Text Label 6400 3150 0    60   ~ 0
 PWM_3
-Text Label 5250 2900 0    60   ~ 0
+Text Label 6400 3250 0    60   ~ 0
 PWM_4
-Text Label 5250 3000 0    60   ~ 0
+Text Label 6400 3350 0    60   ~ 0
 PWM_5
-Text Label 5250 3100 0    60   ~ 0
+Text Label 6400 3450 0    60   ~ 0
 PWM_6
-Text Label 5250 3200 0    60   ~ 0
+Text Label 6400 3550 0    60   ~ 0
 PWM_7
-Text Label 5250 3300 0    60   ~ 0
+Text Label 6400 3650 0    60   ~ 0
 PWM_8
-Text Label 5250 3400 0    60   ~ 0
+Text Label 6400 3750 0    60   ~ 0
 PWM_9
-Text Label 5250 3500 0    60   ~ 0
+Text Label 6400 3850 0    60   ~ 0
 PWM_10
-Text Label 5250 3600 0    60   ~ 0
+Text Label 6400 3950 0    60   ~ 0
 PWM_11
-Text Label 5250 3700 0    60   ~ 0
+Text Label 6400 4050 0    60   ~ 0
 PWM_12
-Text Label 5250 3800 0    60   ~ 0
+Text Label 6400 4150 0    60   ~ 0
 PWM_13
-Text Label 5250 3900 0    60   ~ 0
+Text Label 6400 4250 0    60   ~ 0
 PWM_14
-Text Label 5250 4000 0    60   ~ 0
+Text Label 6400 4350 0    60   ~ 0
 PWM_15
+$Comp
+L servo_controller_3x2:10uF C3
+U 1 1 5BFD7C64
+P 5850 5450
+F 0 "C3" H 5850 5550 40  0000 L CNN
+F 1 "10uF" H 5850 5450 30  0000 C CNN
+F 2 "servo_controller_3x2:SM1210" H 5888 5300 30  0001 C CNN
+F 3 "" H 5850 5450 60  0000 C CNN
+F 4 "digikey" H 5950 5650 60  0001 C CNN "Vendor"
+F 5 "445-4536-1-ND" H 6050 5750 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 10UF 50V 10% X7S 1210" H 6150 5850 60  0001 C CNN "Description"
+	1    5850 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L servo_controller_3x2:0.1uF C2
+U 1 1 5BFD7FFB
+P 5650 5450
+F 0 "C2" H 5650 5550 40  0000 L CNN
+F 1 "0.1uF" H 5650 5450 30  0000 C CNN
+F 2 "servo_controller_3x2:SM1210" H 5688 5300 30  0001 C CNN
+F 3 "" H 5650 5450 60  0000 C CNN
+F 4 "digikey" H 5750 5650 60  0001 C CNN "Vendor"
+F 5 "399-13229-1-ND" H 5850 5750 60  0001 C CNN "PartNumber"
+F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 5950 5850 60  0001 C CNN "Description"
+	1    5650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5BFD91A3
+P 5650 5200
+AR Path="/5BFD91A3" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5BFD91A3" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 1400 4350 50  0001 C CNN
+F 1 "VEE" H 5650 5350 50  0000 C CNN
+F 2 "" H 1400 4500 50  0001 C CNN
+F 3 "" H 1400 4500 50  0001 C CNN
+	1    5650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5BFD9776
+P 5850 5200
+AR Path="/5BFD9776" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5BFD9776" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 1600 4350 50  0001 C CNN
+F 1 "VEE" H 5850 5350 50  0000 C CNN
+F 2 "" H 1600 4500 50  0001 C CNN
+F 3 "" H 1600 4500 50  0001 C CNN
+	1    5850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BFD9AD8
+P 5650 5700
+AR Path="/5BFD9AD8" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5BFD9AD8" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 4450 4100 50  0001 C CNN
+F 1 "GND" H 5655 5527 50  0000 C CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    5650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BFD9F5E
+P 5850 5700
+AR Path="/5BFD9F5E" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5BFD9F5E" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4650 4100 50  0001 C CNN
+F 1 "GND" H 5855 5527 50  0000 C CNN
+F 2 "" H 4650 4350 50  0001 C CNN
+F 3 "" H 4650 4350 50  0001 C CNN
+	1    5850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5200 5650 5250
+Wire Wire Line
+	5850 5200 5850 5250
+Wire Wire Line
+	5650 5650 5650 5700
+Wire Wire Line
+	5850 5650 5850 5700
+$Comp
+L servo_controller_3x2:HEADER_03X16 P2
+U 1 1 5C03D80F
+P 9350 3600
+F 0 "P2" H 9350 4965 50  0000 C CNN
+F 1 "HEADER_03X16" H 9350 4874 50  0000 C CNN
+F 2 "servo_controller_3x2:HEADER_03x16" H 9350 5950 60  0001 C CNN
+F 3 "" H 9350 2500 60  0000 C CNN
+F 4 "digikey" H 9350 5650 60  0001 C CNN "Vendor"
+F 5 "SAM12360-ND" H 9350 5750 60  0001 C CNN "PartNumber"
+F 6 "TSW-116-07-L-T" H 9350 5850 60  0001 C CNN "Description"
+	1    9350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C041176
+P 9700 4800
+AR Path="/5C041176" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5C041176" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 8500 3200 50  0001 C CNN
+F 1 "GND" H 9705 4627 50  0000 C CNN
+F 2 "" H 8500 3450 50  0001 C CNN
+F 3 "" H 8500 3450 50  0001 C CNN
+	1    9700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2700 7400 2700
+Wire Wire Line
+	7450 2800 7400 2800
+Wire Wire Line
+	7450 2900 7400 2900
+Wire Wire Line
+	7450 3000 7400 3000
+Text Label 7400 3000 2    60   ~ 0
+PWM_0
+Text Label 7400 2900 2    60   ~ 0
+PWM_1
+Text Label 7400 2800 2    60   ~ 0
+PWM_2
+Text Label 7400 2700 2    60   ~ 0
+PWM_3
+Wire Wire Line
+	7950 2700 8000 2700
+Wire Wire Line
+	7950 2800 8000 2800
+Wire Wire Line
+	7950 2900 8000 2900
+Wire Wire Line
+	7950 3000 8000 3000
+Text Label 8000 3000 0    60   ~ 0
+SIG_0
+Text Label 8000 2900 0    60   ~ 0
+SIG_1
+Text Label 8000 2800 0    60   ~ 0
+SIG_2
+Text Label 8000 2700 0    60   ~ 0
+SIG_3
+Wire Wire Line
+	7450 3200 7400 3200
+Wire Wire Line
+	7450 3300 7400 3300
+Wire Wire Line
+	7450 3400 7400 3400
+Wire Wire Line
+	7450 3500 7400 3500
+Text Label 7400 3500 2    60   ~ 0
+PWM_4
+Text Label 7400 3400 2    60   ~ 0
+PWM_5
+Text Label 7400 3300 2    60   ~ 0
+PWM_6
+Text Label 7400 3200 2    60   ~ 0
+PWM_7
+Wire Wire Line
+	7950 3200 8000 3200
+Wire Wire Line
+	7950 3300 8000 3300
+Wire Wire Line
+	7950 3400 8000 3400
+Wire Wire Line
+	7950 3500 8000 3500
+Text Label 8000 3500 0    60   ~ 0
+SIG_4
+Text Label 8000 3400 0    60   ~ 0
+SIG_5
+Text Label 8000 3300 0    60   ~ 0
+SIG_6
+Text Label 8000 3200 0    60   ~ 0
+SIG_7
+Wire Wire Line
+	7450 3700 7400 3700
+Wire Wire Line
+	7450 3800 7400 3800
+Wire Wire Line
+	7450 3900 7400 3900
+Wire Wire Line
+	7450 4000 7400 4000
+Text Label 7400 4000 2    60   ~ 0
+PWM_8
+Text Label 7400 3900 2    60   ~ 0
+PWM_9
+Text Label 7400 3800 2    60   ~ 0
+PWM_10
+Text Label 7400 3700 2    60   ~ 0
+PWM_11
+Wire Wire Line
+	7950 3700 8000 3700
+Wire Wire Line
+	7950 3800 8000 3800
+Wire Wire Line
+	7950 3900 8000 3900
+Wire Wire Line
+	7950 4000 8000 4000
+Text Label 8000 4000 0    60   ~ 0
+SIG_8
+Text Label 8000 3900 0    60   ~ 0
+SIG_9
+Text Label 8000 3800 0    60   ~ 0
+SIG_10
+Text Label 8000 3700 0    60   ~ 0
+SIG_11
+Wire Wire Line
+	7450 4200 7400 4200
+Wire Wire Line
+	7450 4300 7400 4300
+Wire Wire Line
+	7450 4400 7400 4400
+Wire Wire Line
+	7450 4500 7400 4500
+Text Label 7400 4500 2    60   ~ 0
+PWM_12
+Text Label 7400 4400 2    60   ~ 0
+PWM_13
+Text Label 7400 4300 2    60   ~ 0
+PWM_14
+Text Label 7400 4200 2    60   ~ 0
+PWM_15
+Wire Wire Line
+	7950 4200 8000 4200
+Wire Wire Line
+	7950 4300 8000 4300
+Wire Wire Line
+	7950 4400 8000 4400
+Wire Wire Line
+	7950 4500 8000 4500
+Text Label 8000 4500 0    60   ~ 0
+SIG_12
+Text Label 8000 4400 0    60   ~ 0
+SIG_13
+Text Label 8000 4300 0    60   ~ 0
+SIG_14
+Text Label 8000 4200 0    60   ~ 0
+SIG_15
+Text Label 9000 2450 2    60   ~ 0
+SIG_0
+Text Label 9000 2650 2    60   ~ 0
+SIG_1
+Text Label 9000 2750 2    60   ~ 0
+SIG_2
+Text Label 9000 2950 2    60   ~ 0
+SIG_3
+Text Label 9000 3050 2    60   ~ 0
+SIG_4
+Text Label 9000 3250 2    60   ~ 0
+SIG_5
+Text Label 9000 3350 2    60   ~ 0
+SIG_6
+Text Label 9000 3550 2    60   ~ 0
+SIG_7
+Text Label 9000 3650 2    60   ~ 0
+SIG_8
+Text Label 9000 3850 2    60   ~ 0
+SIG_9
+Text Label 9000 3950 2    60   ~ 0
+SIG_10
+Text Label 9000 4150 2    60   ~ 0
+SIG_11
+Text Label 9000 4250 2    60   ~ 0
+SIG_12
+Text Label 9000 4450 2    60   ~ 0
+SIG_13
+Text Label 9000 4550 2    60   ~ 0
+SIG_14
+Text Label 9000 4750 2    60   ~ 0
+SIG_15
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5C0924CD
+P 1800 3050
+F 0 "#FLG04" H 1800 3125 50  0001 C CNN
+F 1 "PWR_FLAG" H 1800 3200 50  0000 C CNN
+F 2 "" H 1800 3050 50  0001 C CNN
+F 3 "~" H 1800 3050 50  0001 C CNN
+	1    1800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 3150 1950 3200
+Wire Wire Line
+	1950 3200 2000 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5C09A6C1
+P 1950 3350
+AR Path="/5C09A6C1" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5C09A6C1" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 750 1750 50  0001 C CNN
+F 1 "GND" H 1955 3177 50  0000 C CNN
+F 2 "" H 750 2000 50  0001 C CNN
+F 3 "" H 750 2000 50  0001 C CNN
+	1    1950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3300 1950 3300
+Wire Wire Line
+	1950 3300 1950 3350
+$Comp
+L servo_controller_3x2:diode_schottky_45V_10A D1
+U 1 1 5C09FC2D
+P 3000 3200
+F 0 "D1" H 3000 3087 50  0000 C CNN
+F 1 "diode_schottky_45V_10A" H 2720 3120 50  0001 L CNN
+F 2 "servo_controller_3x2:CFP15" H 2850 3180 60  0001 C CNN
+F 3 "" H 2950 3280 60  0001 C CNN
+F 4 "digikey" H 3050 3380 60  0001 C CNN "Vendor"
+F 5 "568-11697-1-ND" H 3150 3480 60  0001 C CNN "PartNumber"
+F 6 "DIODE SCHOTTKY 45V 10A CFP15" H 3250 3580 60  0001 C CNN "Description"
+	1    3000 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 3150 2850 3200
+Wire Wire Line
+	2850 3200 2900 3200
+Wire Wire Line
+	3100 3200 3150 3200
+Wire Wire Line
+	3150 3200 3150 3150
+$Comp
+L servo_controller_3x2:PWR_JACK_2.1x5.5 P1
+U 1 1 5C0AA800
+P 2200 3250
+F 0 "P1" H 2150 3400 50  0000 L CNN
+F 1 "PWR_JACK_2.1x5.5" V 2300 2900 50  0000 L CNN
+F 2 "footprints:DCJACK_2PIN_HIGHCURRENT" H 2100 3300 60  0001 C CNN
+F 3 "" H 2200 3250 60  0000 C CNN
+F 4 "digikey" H 2300 3500 60  0001 C CNN "Vendor"
+F 5 "CP-063AH-ND" H 2400 3600 60  0001 C CNN "PartNumber"
+F 6 "CONN PWR JACK DC 2.1X5.5 8A T/H" H 2500 3700 60  0001 C CNN "Description"
+	1    2200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5C0AB4BE
+P 1950 3150
+F 0 "#PWR06" H 1950 3000 50  0001 C CNN
+F 1 "VCC" H 1950 3300 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3050 1800 3200
+Wire Wire Line
+	1800 3200 1950 3200
+Connection ~ 1950 3200
+$Comp
+L power:VCC #PWR020
+U 1 1 5C0B89BD
+P 9050 2250
+F 0 "#PWR020" H 9050 2100 50  0001 C CNN
+F 1 "VCC" H 9050 2400 50  0000 C CNN
+F 2 "" H 9050 2250 50  0001 C CNN
+F 3 "" H 9050 2250 50  0001 C CNN
+	1    9050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR021
+U 1 1 5C0B94A3
+P 9650 2250
+F 0 "#PWR021" H 9650 2100 50  0001 C CNN
+F 1 "VCC" H 9650 2400 50  0000 C CNN
+F 2 "" H 9650 2250 50  0001 C CNN
+F 3 "" H 9650 2250 50  0001 C CNN
+	1    9650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4650 9050 4650
+Wire Wire Line
+	9050 4650 9050 4350
+Wire Wire Line
+	9100 4350 9050 4350
+Connection ~ 9050 4350
+Wire Wire Line
+	9050 4350 9050 4050
+Wire Wire Line
+	9100 4050 9050 4050
+Connection ~ 9050 4050
+Wire Wire Line
+	9050 4050 9050 3750
+Wire Wire Line
+	9000 4750 9100 4750
+Wire Wire Line
+	9000 4550 9100 4550
+Wire Wire Line
+	9000 4450 9100 4450
+Wire Wire Line
+	9000 4250 9100 4250
+Wire Wire Line
+	9000 4150 9100 4150
+Wire Wire Line
+	9000 3950 9100 3950
+Wire Wire Line
+	9000 3850 9100 3850
+Wire Wire Line
+	9100 3750 9050 3750
+Connection ~ 9050 3750
+Wire Wire Line
+	9050 3750 9050 3450
+Wire Wire Line
+	9100 3650 9000 3650
+Wire Wire Line
+	9100 3550 9000 3550
+Wire Wire Line
+	9100 3450 9050 3450
+Connection ~ 9050 3450
+Wire Wire Line
+	9050 3450 9050 3150
+Wire Wire Line
+	9100 3350 9000 3350
+Wire Wire Line
+	9100 3250 9000 3250
+Wire Wire Line
+	9100 3150 9050 3150
+Connection ~ 9050 3150
+Wire Wire Line
+	9050 3150 9050 2850
+Wire Wire Line
+	9100 3050 9000 3050
+Wire Wire Line
+	9100 2950 9000 2950
+Wire Wire Line
+	9100 2850 9050 2850
+Connection ~ 9050 2850
+Wire Wire Line
+	9050 2850 9050 2550
+Wire Wire Line
+	9100 2750 9000 2750
+Wire Wire Line
+	9100 2650 9000 2650
+Wire Wire Line
+	9100 2550 9050 2550
+Connection ~ 9050 2550
+Wire Wire Line
+	9050 2550 9050 2250
+Wire Wire Line
+	9600 4650 9650 4650
+Wire Wire Line
+	9650 4650 9650 4350
+Wire Wire Line
+	9600 2450 9700 2450
+Wire Wire Line
+	9700 2450 9700 2650
+Wire Wire Line
+	9600 4750 9700 4750
+Connection ~ 9700 4750
+Wire Wire Line
+	9700 4750 9700 4800
+Wire Wire Line
+	9600 4550 9700 4550
+Connection ~ 9700 4550
+Wire Wire Line
+	9700 4550 9700 4750
+Wire Wire Line
+	9600 4450 9700 4450
+Connection ~ 9700 4450
+Wire Wire Line
+	9700 4450 9700 4550
+Wire Wire Line
+	9600 4350 9650 4350
+Connection ~ 9650 4350
+Wire Wire Line
+	9650 4350 9650 4050
+Wire Wire Line
+	9600 4250 9700 4250
+Connection ~ 9700 4250
+Wire Wire Line
+	9700 4250 9700 4450
+Wire Wire Line
+	9600 4150 9700 4150
+Connection ~ 9700 4150
+Wire Wire Line
+	9700 4150 9700 4250
+Wire Wire Line
+	9600 4050 9650 4050
+Connection ~ 9650 4050
+Wire Wire Line
+	9650 4050 9650 3750
+Wire Wire Line
+	9600 3750 9650 3750
+Connection ~ 9650 3750
+Wire Wire Line
+	9650 3750 9650 3450
+Wire Wire Line
+	9600 3450 9650 3450
+Connection ~ 9650 3450
+Wire Wire Line
+	9650 3450 9650 3150
+Wire Wire Line
+	9600 3150 9650 3150
+Connection ~ 9650 3150
+Wire Wire Line
+	9650 3150 9650 2850
+Wire Wire Line
+	9600 2850 9650 2850
+Connection ~ 9650 2850
+Wire Wire Line
+	9650 2850 9650 2550
+Wire Wire Line
+	9600 2550 9650 2550
+Connection ~ 9650 2550
+Wire Wire Line
+	9650 2550 9650 2250
+Wire Wire Line
+	9600 2650 9700 2650
+Connection ~ 9700 2650
+Wire Wire Line
+	9700 2650 9700 2750
+Wire Wire Line
+	9600 2750 9700 2750
+Connection ~ 9700 2750
+Wire Wire Line
+	9700 2750 9700 2950
+Wire Wire Line
+	9600 2950 9700 2950
+Connection ~ 9700 2950
+Wire Wire Line
+	9700 2950 9700 3050
+Wire Wire Line
+	9600 3050 9700 3050
+Connection ~ 9700 3050
+Wire Wire Line
+	9700 3050 9700 3250
+Wire Wire Line
+	9600 3250 9700 3250
+Connection ~ 9700 3250
+Wire Wire Line
+	9700 3250 9700 3350
+Wire Wire Line
+	9600 3350 9700 3350
+Connection ~ 9700 3350
+Wire Wire Line
+	9700 3350 9700 3550
+Wire Wire Line
+	9600 3550 9700 3550
+Connection ~ 9700 3550
+Wire Wire Line
+	9700 3550 9700 3650
+Wire Wire Line
+	9600 3650 9700 3650
+Connection ~ 9700 3650
+Wire Wire Line
+	9700 3650 9700 3850
+Wire Wire Line
+	9600 3850 9700 3850
+Connection ~ 9700 3850
+Wire Wire Line
+	9700 3850 9700 3950
+Wire Wire Line
+	9600 3950 9700 3950
+Connection ~ 9700 3950
+Wire Wire Line
+	9700 3950 9700 4150
+Wire Wire Line
+	9100 2450 9000 2450
+$Comp
+L power:VCC #PWR010
+U 1 1 5C1E3E9E
+P 2850 3150
+F 0 "#PWR010" H 2850 3000 50  0001 C CNN
+F 1 "VCC" H 2850 3300 50  0000 C CNN
+F 2 "" H 2850 3150 50  0001 C CNN
+F 3 "" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VEE #PWR?
+U 1 1 5C1E44E8
+P 3150 3150
+AR Path="/5C1E44E8" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5C1E44E8" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H -1100 2300 50  0001 C CNN
+F 1 "VEE" H 3150 3300 50  0000 C CNN
+F 2 "" H -1100 2450 50  0001 C CNN
+F 3 "" H -1100 2450 50  0001 C CNN
+	1    3150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L servo_controller_3x2:220uF_POL C1
+U 1 1 5C1E64D6
+P 2550 4250
+F 0 "C1" H 2638 4280 50  0000 L CNN
+F 1 "220uF_POL" H 2638 4204 30  0000 L CNN
+F 2 "servo_controller_3x2:C_ELEC_10" H 2460 4220 60  0001 C CNN
+F 3 "" H 2560 4320 60  0001 C CNN
+F 4 "digikey" H 2660 4420 60  0001 C CNN "Vendor"
+F 5 "PCE3812CT-ND" H 2760 4520 60  0001 C CNN "PartNumber"
+F 6 "CAP ALUM 220UF 20% 50V SMD" H 2860 4620 60  0001 C CNN "Description"
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1E6E25
+P 2550 4500
+AR Path="/5C1E6E25" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5C1E6E25" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 1350 2900 50  0001 C CNN
+F 1 "GND" H 2555 4327 50  0000 C CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "" H 1350 3150 50  0001 C CNN
+	1    2550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4150 2550 4000
+Wire Wire Line
+	2550 4350 2550 4500
+$Comp
+L servo_controller_3x2:LED_5V_RED L1
+U 1 1 5C1F633B
+P 1900 4250
+F 0 "L1" V 1854 4328 50  0000 L CNN
+F 1 "LED_5V_RED" V 1945 4328 50  0000 L CNN
+F 2 "servo_controller_3x2:LED_555-3XXX_R" H 1800 4250 60  0001 C CNN
+F 3 "" H 1900 4250 60  0000 C CNN
+F 4 "digikey" H 2000 4450 60  0001 C CNN "Vendor"
+F 5 "350-1722-ND" H 2100 4550 60  0001 C CNN "PartNumber"
+F 6 "LED 2MM 5V VERTICAL RED PC MNT" H 2200 4650 60  0001 C CNN "Description"
+	1    1900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 5C1F682C
+P 1900 4000
+F 0 "#PWR04" H 1900 3850 50  0001 C CNN
+F 1 "VCC" H 1900 4150 50  0000 C CNN
+F 2 "" H 1900 4000 50  0001 C CNN
+F 3 "" H 1900 4000 50  0001 C CNN
+	1    1900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C1F6EF2
+P 1900 4500
+AR Path="/5C1F6EF2" Ref="#PWR?"  Part="1" 
+AR Path="/5BFC35F6/5C1F6EF2" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 700 2900 50  0001 C CNN
+F 1 "GND" H 1905 4327 50  0000 C CNN
+F 2 "" H 700 3150 50  0001 C CNN
+F 3 "" H 700 3150 50  0001 C CNN
+	1    1900 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4050 1900 4000
+Wire Wire Line
+	1900 4500 1900 4450
+$Comp
+L power:VCC #PWR08
+U 1 1 5C20F043
+P 2550 4000
+F 0 "#PWR08" H 2550 3850 50  0001 C CNN
+F 1 "VCC" H 2550 4150 50  0000 C CNN
+F 2 "" H 2550 4000 50  0001 C CNN
+F 3 "" H 2550 4000 50  0001 C CNN
+	1    2550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L servo_controller_3x2:220x4 RP1
+U 1 1 5C26F6E2
+P 7700 2850
+F 0 "RP1" V 7950 2850 40  0000 C CNN
+F 1 "220x4" V 7750 2850 40  0000 C CNN
+F 2 "servo_controller_3x2:RESISTOR_PACK_SM1206x4" V 6550 2850 30  0001 C CNN
+F 3 "" H 7550 2850 30  0000 C CNN
+F 4 "digikey" V 6650 2850 60  0001 C CNN "Vendor"
+F 5 "744C083221JPCT-ND" V 6500 2850 60  0001 C CNN "PartNumber"
+F 6 "RES ARRAY 4 RES 220 OHM 2012" V 6450 2850 60  0001 C CNN "Description"
+	1    7700 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L servo_controller_3x2:220x4 RP2
+U 1 1 5C2706F5
+P 7700 3350
+F 0 "RP2" V 7950 3350 40  0000 C CNN
+F 1 "220x4" V 7750 3350 40  0000 C CNN
+F 2 "servo_controller_3x2:RESISTOR_PACK_SM1206x4" V 6550 3350 30  0001 C CNN
+F 3 "" H 7550 3350 30  0000 C CNN
+F 4 "digikey" V 6650 3350 60  0001 C CNN "Vendor"
+F 5 "744C083221JPCT-ND" V 6500 3350 60  0001 C CNN "PartNumber"
+F 6 "RES ARRAY 4 RES 220 OHM 2012" V 6450 3350 60  0001 C CNN "Description"
+	1    7700 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L servo_controller_3x2:220x4 RP3
+U 1 1 5C27101C
+P 7700 3850
+F 0 "RP3" V 7950 3850 40  0000 C CNN
+F 1 "220x4" V 7750 3850 40  0000 C CNN
+F 2 "servo_controller_3x2:RESISTOR_PACK_SM1206x4" V 6550 3850 30  0001 C CNN
+F 3 "" H 7550 3850 30  0000 C CNN
+F 4 "digikey" V 6650 3850 60  0001 C CNN "Vendor"
+F 5 "744C083221JPCT-ND" V 6500 3850 60  0001 C CNN "PartNumber"
+F 6 "RES ARRAY 4 RES 220 OHM 2012" V 6450 3850 60  0001 C CNN "Description"
+	1    7700 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L servo_controller_3x2:220x4 RP4
+U 1 1 5C271917
+P 7700 4350
+F 0 "RP4" V 7950 4350 40  0000 C CNN
+F 1 "220x4" V 7750 4350 40  0000 C CNN
+F 2 "servo_controller_3x2:RESISTOR_PACK_SM1206x4" V 6550 4350 30  0001 C CNN
+F 3 "" H 7550 4350 30  0000 C CNN
+F 4 "digikey" V 6650 4350 60  0001 C CNN "Vendor"
+F 5 "744C083221JPCT-ND" V 6500 4350 60  0001 C CNN "PartNumber"
+F 6 "RES ARRAY 4 RES 220 OHM 2012" V 6450 4350 60  0001 C CNN "Description"
+	1    7700 4350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
