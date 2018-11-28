@@ -9,7 +9,7 @@
 
 * Description
 
-  This...
+  This device independently controls up to 16 5V hobby servos.
 
 * Assembly Instructions
 

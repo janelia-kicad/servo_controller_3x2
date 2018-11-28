@@ -1,0 +1,16 @@
+# Created 2018-11-28 Wed 14:20
+* Bill of Materials
+#+RESULTS: pcb-parts
+| Item | Reference(s)    | Quantity | PartNumber        | Vendor  | Description                                              |
+|------+-----------------+----------+-------------------+---------+----------------------------------------------------------|
+|    1 | C1              |        1 | PCE3812CT-ND      | digikey | CAP ALUM 220UF 20% 50V SMD                               |
+|    2 | C2              |        1 | 399-13229-1-ND    | digikey | CAP CER 0.1UF 50V 10% X7R 1210                           |
+|    3 | C3              |        1 | 445-4536-1-ND     | digikey | CAP CER 10UF 50V 10% X7S 1210                            |
+|    4 | D1              |        1 | 568-11697-1-ND    | digikey | DIODE SCHOTTKY 45V 10A CFP15                             |
+|    5 | L1              |        1 | 350-1722-ND       | digikey | LED 2MM 5V VERTICAL RED PC MNT                           |
+|    6 | MDB1            |        2 | S1011E-16-ND      | digikey | 16 Position Header Through Hole Male Pins                |
+|    7 | P1              |        1 | CP-063AH-ND       | digikey | CONN PWR JACK DC 2.1X5.5 8A T/H                          |
+|    8 | P2              |        1 | SAM12360-ND       | digikey | TSW-116-07-L-T                                           |
+|    9 | R1 R2           |        2 | YAG5470CT-ND      | digikey | RES SMD 4.7K OHM 1% 1/2W 1210                            |
+|   10 | RP1 RP2 RP3 RP4 |        4 | 744C083221JPCT-ND | digikey | RES ARRAY 4 RES 220 OHM 2012                             |
+|   11 | U1              |        1 | 568-5931-1-ND     | digikey | LED Driver IC 16 Output Linear PWM Dimming 25mA 28-TSSOP |
